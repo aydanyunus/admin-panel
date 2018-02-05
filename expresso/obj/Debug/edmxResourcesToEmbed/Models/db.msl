@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExpressoModelStoreContainer" CdmEntityContainer="ExpressoEntities">
+    <EntitySetMapping Name="Abouts">
+      <EntityTypeMapping TypeName="ExpressoModel.About">
+        <MappingFragment StoreEntitySet="About">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content1" ColumnName="Content1" />
+          <ScalarProperty Name="Content2" ColumnName="Content2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Drinks">
+      <EntityTypeMapping TypeName="ExpressoModel.Drink">
+        <MappingFragment StoreEntitySet="Drinks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GalerryFilters">
+      <EntityTypeMapping TypeName="ExpressoModel.GalerryFilter">
+        <MappingFragment StoreEntitySet="GalerryFilters">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Galleries">
+      <EntityTypeMapping TypeName="ExpressoModel.Gallery">
+        <MappingFragment StoreEntitySet="Gallery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="classname" ColumnName="classname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Headers">
+      <EntityTypeMapping TypeName="ExpressoModel.Header">
+        <MappingFragment StoreEntitySet="Header">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Background_img" ColumnName="Background_img" />
+          <ScalarProperty Name="SupTitle" ColumnName="SupTitle" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SubTitle" ColumnName="SubTitle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Partners">
+      <EntityTypeMapping TypeName="ExpressoModel.Partner">
+        <MappingFragment StoreEntitySet="Partners">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ExpressoModel.Post">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections">
+      <EntityTypeMapping TypeName="ExpressoModel.Section">
+        <MappingFragment StoreEntitySet="Section">
+          <ScalarProperty Name="Background_img" ColumnName="Background_img" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Services">
+      <EntityTypeMapping TypeName="ExpressoModel.Service">
+        <MappingFragment StoreEntitySet="Service">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reviews">
+      <EntityTypeMapping TypeName="ExpressoModel.Review">
+        <MappingFragment StoreEntitySet="Reviews">
+          <ScalarProperty Name="Icon5" ColumnName="Icon5" />
+          <ScalarProperty Name="Icon4" ColumnName="Icon4" />
+          <ScalarProperty Name="Icon3" ColumnName="Icon3" />
+          <ScalarProperty Name="Icon2" ColumnName="Icon2" />
+          <ScalarProperty Name="Icon1" ColumnName="Icon1" />
+          <ScalarProperty Name="SubTitle" ColumnName="SubTitle" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="SupTitle" ColumnName="SupTitle" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CallUS">
+      <EntityTypeMapping TypeName="ExpressoModel.CallU">
+        <MappingFragment StoreEntitySet="CallUS">
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExpressoFooters">
+      <EntityTypeMapping TypeName="ExpressoModel.ExpressoFooter">
+        <MappingFragment StoreEntitySet="ExpressoFooter">
+          <ScalarProperty Name="pinterest_link" ColumnName="pinterest_link" />
+          <ScalarProperty Name="linkedin_link" ColumnName="linkedin_link" />
+          <ScalarProperty Name="youtube_link" ColumnName="youtube_link" />
+          <ScalarProperty Name="instagram_link" ColumnName="instagram_link" />
+          <ScalarProperty Name="twitter_link" ColumnName="twitter_link" />
+          <ScalarProperty Name="facebook_link" ColumnName="facebook_link" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Newsletters">
+      <EntityTypeMapping TypeName="ExpressoModel.Newsletter">
+        <MappingFragment StoreEntitySet="Newsletter">
+          <ScalarProperty Name="Content2" ColumnName="Content2" />
+          <ScalarProperty Name="Num2" ColumnName="Num2" />
+          <ScalarProperty Name="Content1" ColumnName="Content1" />
+          <ScalarProperty Name="Num1" ColumnName="Num1" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkingHours">
+      <EntityTypeMapping TypeName="ExpressoModel.WorkingHour">
+        <MappingFragment StoreEntitySet="WorkingHours">
+          <ScalarProperty Name="hour3" ColumnName="hour3" />
+          <ScalarProperty Name="day3" ColumnName="day3" />
+          <ScalarProperty Name="hour2" ColumnName="hour2" />
+          <ScalarProperty Name="day2" ColumnName="day2" />
+          <ScalarProperty Name="hour1" ColumnName="hour1" />
+          <ScalarProperty Name="day1" ColumnName="day1" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

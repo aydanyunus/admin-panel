@@ -1,0 +1,43 @@
+﻿@model EXPRESSO.Models.Section
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin.cshtml";
+}
+
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Content)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Background_img)
+        </th>
+        <th></th>
+    </tr>
+
+
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => Model.Content)
+        </td>
+        <td>
+            <img src="~/Uploads/@Model.Background_img" class="img-thumbnail" />
+
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id= Model.Id }) |
+            @Html.ActionLink("Details", "Details", new { id= Model.Id })
+        </td>
+    </tr>
+
+
+</table>

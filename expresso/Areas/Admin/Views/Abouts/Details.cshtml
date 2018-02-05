@@ -1,0 +1,51 @@
+﻿@model EXPRESSO.Models.About
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>About</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+           <img src="~/Uploads/@Model.Photo" class="img-thumbnail"/>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Content2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Content2)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
