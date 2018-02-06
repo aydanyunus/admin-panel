@@ -47,10 +47,41 @@ namespace EXPRESSO.Areas.Admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Photo,Title,Content")] Drink drink)
+        public ActionResult Create([Bind(Include = "Id,Photo,Title,Content")] Drink drink, HttpPostedFileBase Photo)
         {
             if (ModelState.IsValid)
             {
+                if (Photo != null)
+                {
+                    string fileName = null;
+                    if (Photo.ContentLength > 0 && Photo.ContentLength <= 3 * 1024 * 1024)
+                    {
+                        if (Photo.ContentType.ToLower() == "image/jpeg" ||
+                            Photo.ContentType.ToLower() == "image/jpg" ||
+                            Photo.ContentType.ToLower() == "image/png" ||
+                            Photo.ContentType.ToLower() == "image/gif"
+                        )
+                        {
+                            DateTime dt = DateTime.Now;
+                            var beforeStr = dt.Year + "_" + dt.Month + "_" + dt.Day + "_" + dt.Hour + "_" + dt.Minute + "_" + dt.Second + "_" + dt.Millisecond;
+                            fileName = beforeStr + Path.GetFileName(Photo.FileName);
+                            var newFilePath = Path.Combine(Server.MapPath("~/Uploads/"), fileName);
+
+                            Photo.SaveAs(newFilePath);
+                            drink.Photo = fileName;
+                        }
+                        else
+                        {
+                            ViewBag.EditError = "Photo type is not valid.";
+                            return View();
+                        }
+                    }
+                    else
+                    {
+                        ViewBag.EditError = "Photo type should not be more than 3 MB.";
+                        return View();
+                    }
+                }
                 db.Drinks.Add(drink);
                 db.SaveChanges();
                 return RedirectToAction("Index");
