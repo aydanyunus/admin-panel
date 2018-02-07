@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace EXPRESSO.Areas.Admin.Controllers
 {
-    public class Home1Controller : Controller
+    public class HomeController : Controller
     {
         // GET: Admin/Home
         public ActionResult Index()
